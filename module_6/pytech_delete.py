@@ -17,7 +17,14 @@ john = {
     "first_name": "John",
     "last_name": "Doe"
 }
-john_student_id = students.insert_one(john).inserted_id
+# john_student_id = students.insert_one(john).inserted_id
 
-newDoc = students.find_one({"student_id":"1010"})
-print(newDoc)
+# newDoc = students.find_one({"student_id":"1010"})
+# print(newDoc)
+
+results = students.delete_one({"student_id":"1010"})
+
+docs = db.students.find({})
+
+for results in docs:
+    print(results)
