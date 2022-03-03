@@ -1,4 +1,4 @@
-# Title : whatabook_practice_execution.py
+# Title : what_a_book_final.py
 # Author : Jaira McNair
 # Date : March 1, 2022
 # Description : What-A-Book program; allows user to navigate a book store to add books to a wishlist, view their wishlist, view all the books in the store, and view store locations
@@ -9,10 +9,10 @@ import mysql.connector
 from mysql.connector import errorcode
 
 config = {
-    "user": "whatabookpractice_user",
+    "user": "whatabookfinal_user",
     "password": "MySQL8IsGreat!",
     "host": "127.0.0.1",
-    "database": "whatabook_practice",
+    "database": "what_a_book_final",
     "raise_on_warnings": True
 }
 
